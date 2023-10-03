@@ -1,0 +1,303 @@
+/* зміна дизайну при переході на мобільний перегляд */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+/* ------------------------------------------------ */
+
+body {
+    margin: 0;
+    font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+    text-align: center;    
+}
+p {
+  margin: 0px;
+}
+
+h3, h2 {
+  margin: 0;
+}
+
+p::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+
+article {
+    margin: 0px;
+    border-bottom: dashed #333;
+  }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a, button {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    margin: 5px;
+}
+
+img {
+    opacity: 1.0;
+  }
+  
+  img:hover {
+    opacity: 0.5;
+  }
+
+/* The index.html navigation bar */
+.header {
+    overflow: hidden;
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    align-items: center;
+}
+
+.logo-container {
+  margin: 0px;
+}
+.logo-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo-img {
+    height: 40px;
+}
+
+nav ul li ul li{position: absolute; top:20px; left:5px}
+
+.nav-list li {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.nav-list li:last-of-type a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 3px;
+    background-color: #dd3d53;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: #c9233a;
+}
+
+.nav-list li:last-of-type a svg {
+    width: 1em;
+}
+.donate {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    /*position: fixed;*/ /*Set the navbar to fixed position, but dropdown menu will not work*/
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {    
+    display: flex;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 14px 16px;
+  }
+  
+ /* Start -------Style The Dropdown Button */
+
+  /* Change background on mouse-over */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background: #ddd;
+    color: black;
+  }
+
+ /* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown Button */
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* End-------Style The Dropdown Button */
+
+/* Main content */
+
+.container {  
+  padding: 18px;
+    margin-top: 35px; /* Add a top margin to avoid content overlay */
+    /* height: 2000px; */
+  }
+.work-links {
+    display: flex;
+  }
+  .work-links div {
+flex: 1;
+  }
+.conveniq, .git, .site{
+    border: solid 1px grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+/* .git {
+    border: solid 1px grey;
+    border-radius: 10px;
+  } */
+
+/* usefull links & button settings */
+.links {
+    color: blue;
+    display: inline-block;
+    margin: 5px;
+    transition: all 1s ease;
+    /* transform-origin: left bottom; */
+}
+.links:hover {
+  transform: scale(1.1);  
+  color: rgb(8, 69, 150);
+}
+
+.link-image {
+  transition: all 1s ease;
+}
+
+.link-image:hover {
+  transform: scale(1.1);
+}
+
+.linksbutton {
+    color: blue;
+}
+
+/* table settings */
+.table {
+    margin: 20px;
+  }
+  td, th {
+    border: solid;
+    padding: 5px;
+  }
+  table {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+  }
+  .left {
+    text-align: left;
+  }
+  
+  /* how to make a live preview of a website */
+  #frame {
+    border: 2px solid rgb(226, 17, 52);
+    width: 100%;
+    height: 400px;
+    pointer-events: none;
+    overflow: hidden;
+    display: block;
+  }
+
+footer {
+  position: sticky;
+  bottom: 0;
+  
+}
+  .footer button {
+    padding: 16px;
+  }
+
+    /* programming studiing */
+    .parent p {
+      width: 50px;
+    }
+    .parent {
+      width: 500px;
+    }
+/* youtube button settings */
+.youtube {
+  background-color: red; 
+  color: white; 
+  border-radius:5px; 
+}
+.youtube:hover {
+  background-color: #c9233a;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* warinukraine button settings */
+.warinukraine {
+  color: red; 
+  border-radius:10px;
+}
+.warinukraine:hover {
+  background-color: rgb(176, 190, 190);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
